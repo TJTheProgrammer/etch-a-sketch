@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Etching and sketching-->
+<div>
+    <p style="text-align: center; font-family: 'Courier New', Courier, monospace; font-size: 20px;">Etch-A-Sketch</p>
+</div>
+<div class="major">
+    <!-- part where we custom make-->
+    
+    <div class="leftpart">
+       
+        <button class="colordot" id="dot" onclick="selectColor()"></button>
+
+<input type="color" id="colorpick" oninput="colorChange()" style="visibility: hidden;">
+       
+    <button class="modes">Color Mode</button>
+    <button class="modes">Rainbow Mode</button>
+    <button class="modes">Clear</button>
+    <br>
+    <input type="range" id="scroller" min="1" max="32" value="16" style="margin-left: 50%;" onchange="gridChange()">
+    </div>
+
+    <div class="rightpart">
+        <div id="gridcontainer" class="gridcontainer">
+            <table id="grid" style="width:400px; height:400px;">
+               
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="script.js">
+    
+    document.getElementById("dot").style.backgroundColor = colorpick
+</script>
+
+
+</body>
+
+</html>

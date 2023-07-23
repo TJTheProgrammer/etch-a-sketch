@@ -1,0 +1,36 @@
+.major {
+    display: flex;
+
+}
+
+.leftpart {
+    display: block;
+}
+
+ td {
+    width: auto;
+    height: auto;
+}
+
+
+
+.colordot {
+    margin-left: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    color: red;
+    background-color: red;
+}
+.modes {
+    margin-left: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 120px;
+}
+.gridcontainer {
+    display: grid;
+    grid-gap: 10px;
+}
